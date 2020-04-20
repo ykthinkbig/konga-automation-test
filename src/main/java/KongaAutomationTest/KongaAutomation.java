@@ -42,11 +42,11 @@ public class KongaAutomation {
         //navigate to the login page
         driver.findElement(By.cssSelector("#app-content-wrapper > div.e5dc4_DR8xw > nav > div._2d4bb_2rbWX > div > div.e5d46_2l87X._16536_xxIKG > div._12e27_1r3kc > a")).click();
 
-        String email = "***";
+        String email = "igwe_obianuju22@yahoo.com";
         //enter the email
         driver.findElement(By.cssSelector("#username")).sendKeys(email);
 
-        String password = "***";
+        String password = "December22";
         //enter the password
         driver.findElement(By.cssSelector("#password")).sendKeys(password);
 
@@ -87,7 +87,7 @@ public class KongaAutomation {
         }
         catch(org.openqa.selenium.StaleElementReferenceException ex)
         {
-            System.out.println("element becomes state");
+            System.out.println("element becomes stale");
             WebElement addToCart =  driver.findElement(By.cssSelector("#mainContent > section._9cac3_2I9l4 > section > section > section > section > ul > li:nth-child(1) > div > div > div._4941f_1HCZm > form > div._2aac2_3bwnD._549f7_zvZ8u._49c0c_3Cv2D._977c5_2vBMq > button"));
             addToCart.click();
         }
@@ -152,13 +152,16 @@ public class KongaAutomation {
         cardPayment.click();
 
         //Enter Card details
-        driver.findElement(By.cssSelector("#card-number")).sendKeys("****");
+        driver.findElement(By.cssSelector("#card-number")).sendKeys("5199124265343786");
 
         //Enter expiry
         driver.findElement(By.cssSelector("#expiry")).sendKeys("02/22");
 
         //Enter cvv
-        driver.findElement(By.cssSelector("#cvv")).sendKeys("123");
+        driver.findElement(By.cssSelector("#cvv")).sendKeys("925");
+
+        //enter pin
+        driver.findElement(By.cssSelector("#card-pin")).sendKeys("1992");
 
         //select the validateCardForm button
         driver.findElement(By.cssSelector("#validateCardForm")).click();
