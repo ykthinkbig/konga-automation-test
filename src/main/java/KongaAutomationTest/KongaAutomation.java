@@ -42,11 +42,11 @@ public class KongaAutomation {
         //navigate to the login page
         driver.findElement(By.cssSelector("#app-content-wrapper > div.e5dc4_DR8xw > nav > div._2d4bb_2rbWX > div > div.e5d46_2l87X._16536_xxIKG > div._12e27_1r3kc > a")).click();
 
-        String email = "igwe_obianuju22@yahoo.com";
+        String email = "xxxxx";
         //enter the email
         driver.findElement(By.cssSelector("#username")).sendKeys(email);
 
-        String password = "December22";
+        String password = "xxxxx";
         //enter the password
         driver.findElement(By.cssSelector("#password")).sendKeys(password);
 
